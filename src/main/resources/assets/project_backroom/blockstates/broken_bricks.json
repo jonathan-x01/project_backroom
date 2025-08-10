@@ -1,0 +1,80 @@
+{
+  "variants": {
+    "variety=1,facing=north": {
+      "model": "project_backroom:block/broken_bricks_1",
+      "uvlock": true,
+      "y": 270
+    },
+    "variety=1,facing=east": {
+      "model": "project_backroom:block/broken_bricks_1",
+      "uvlock": true
+    },
+    "variety=1,facing=south": {
+      "model": "project_backroom:block/broken_bricks_1",
+      "uvlock": true,
+      "y": 90
+    },
+    "variety=1,facing=west": {
+      "model": "project_backroom:block/broken_bricks_1",
+      "uvlock": true,
+      "y": 180
+    },
+    "variety=2,facing=north": {
+      "model": "project_backroom:block/broken_bricks_2",
+      "uvlock": true,
+      "y": 270
+    },
+    "variety=2,facing=east": {
+      "model": "project_backroom:block/broken_bricks_2",
+      "uvlock": true
+    },
+    "variety=2,facing=south": {
+      "model": "project_backroom:block/broken_bricks_2",
+      "uvlock": true,
+      "y": 90
+    },
+    "variety=2,facing=west": {
+      "model": "project_backroom:block/broken_bricks_2",
+      "uvlock": true,
+      "y": 180
+    },
+    "variety=3,facing=north": {
+      "model": "project_backroom:block/broken_bricks_3",
+      "uvlock": true,
+      "y": 270
+    },
+    "variety=3,facing=east": {
+      "model": "project_backroom:block/broken_bricks_3",
+      "uvlock": true
+    },
+    "variety=3,facing=south": {
+      "model": "project_backroom:block/broken_bricks_3",
+      "uvlock": true,
+      "y": 90
+    },
+    "variety=3,facing=west": {
+      "model": "project_backroom:block/broken_bricks_3",
+      "uvlock": true,
+      "y": 180
+    },
+    "variety=4,facing=north": {
+      "model": "project_backroom:block/broken_bricks_4",
+      "uvlock": true,
+      "y": 270
+    },
+    "variety=4,facing=east": {
+      "model": "project_backroom:block/broken_bricks_4",
+      "uvlock": true
+    },
+    "variety=4,facing=south": {
+      "model": "project_backroom:block/broken_bricks_4",
+      "uvlock": true,
+      "y": 90
+    },
+    "variety=4,facing=west": {
+      "model": "project_backroom:block/broken_bricks_4",
+      "uvlock": true,
+      "y": 180
+    }
+  }
+}
