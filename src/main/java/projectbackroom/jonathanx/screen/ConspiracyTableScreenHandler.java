@@ -58,7 +58,7 @@ public class ConspiracyTableScreenHandler extends ScreenHandler {
             }
         });
 
-        this.outputSlot = this.addSlot(new Slot(output, 0, 46, 53){
+        this.outputSlot = this.addSlot(new Slot(output, 0, 93, 46){
             @Override
             public boolean canInsert(ItemStack stack) {
                 return false;

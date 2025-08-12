@@ -38,6 +38,7 @@ public class ProjectBackroomClient implements ClientModInitializer {
 
 		EntityRendererRegistry.register(BackroomEntities.RUSTY_TIPPED_ARROW, RustyTippedArrowRenderer::new);
 
+		// TODO : Fix held position
 		BuiltinItemRendererRegistry.INSTANCE.register(BackroomItems.MISSING_POSTER, (itemStack, modelTransformationMode, matrixStack, vertexConsumerProvider, i, i1) -> {
 			if (modelTransformationMode == ModelTransformationMode.GUI){
 				matrixStack.push();
