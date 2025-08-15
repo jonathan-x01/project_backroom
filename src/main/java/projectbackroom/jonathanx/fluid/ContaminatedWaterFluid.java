@@ -14,6 +14,7 @@ import net.minecraft.world.WorldView;
 import projectbackroom.jonathanx.init.BackroomBlocks;
 import projectbackroom.jonathanx.block.fluids.BackroomFluidBlock;
 import projectbackroom.jonathanx.init.BackroomFluids;
+import projectbackroom.jonathanx.init.BackroomItems;
 
 public class ContaminatedWaterFluid extends BackroomsFlowableFluid {
     public ContaminatedWaterFluid() {
@@ -53,7 +54,7 @@ public class ContaminatedWaterFluid extends BackroomsFlowableFluid {
 
     @Override
     public Item getBucketItem() {
-        return null;
+        return BackroomItems.CONTAMINATED_WATER_BUCKET;
     }
 
     @Override

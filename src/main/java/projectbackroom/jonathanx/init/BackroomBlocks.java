@@ -100,7 +100,7 @@ public class BackroomBlocks implements Initer {
                         .setFogAlpha(0.8f)
                         .setSplashParticles(
                                 BackroomFluidBlock.FluidSplashParticleManager.create()
-                                        .setParticles(BackroomParticleTypes.CONTAMINATED_WATER_SPLASH, BackroomParticleTypes.CONTAMINATED_WATER_BUBBLE)
+                                        .setParticles(BackroomParticleTypes.LANDING_ALMOND_WATER, BackroomParticleTypes.ALMOND_WATER_BUBBLE)
                         )
         );
 

@@ -46,6 +46,10 @@
   "item.project_backroom.almond_seed": "Almond Seed",
   "item.project_backroom.almond_husk": "Almond Husk",
   "item.project_backroom.missing_poster": "Generic Missing Poster",
+  "item.project_backroom.almond_milk_bucket": "Almond Milk",
+  "item.project_backroom.almond_water_bucket": "Almond Water Bucket",
+  "item.project_backroom.contaminated_water_bucket": "Contaminated Water Bucket",
+  "item.project_backroom.black_sludge_bucket": "Black Sludge Bucket",
 
   "item.minecraft.potion.effect.homemade_almond_water": "Homemade Almond Water",
 

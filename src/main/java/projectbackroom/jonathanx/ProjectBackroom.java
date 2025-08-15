@@ -1,5 +1,6 @@
 package projectbackroom.jonathanx;
 
+import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -7,6 +8,7 @@ import net.minecraft.block.ComposterBlock;
 import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

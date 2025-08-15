@@ -1,9 +1,12 @@
 package projectbackroom.jonathanx.init;
 
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
+import net.minecraft.particle.ParticleType;
 import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import org.apache.http.annotation.Obsolete;
 import projectbackroom.jonathanx.ProjectBackroom;
 import projectbackroom.jonathanx.util.DebugLogger;
@@ -30,7 +33,7 @@ public class BackroomParticleTypes implements Initer {
     public static final SimpleParticleType SPLASH = register("splash", FabricParticleTypes.simple());
 
     private static SimpleParticleType register(String name, SimpleParticleType type){
-        // TODO: Use new registration method
-        return Registry.register(Registries.PARTICLE_TYPE, ProjectBackroom.id(name), type);
+        RegistryKey<ParticleType<?>> particleKey = RegistryKey.of(RegistryKeys.PARTICLE_TYPE, ProjectBackroom.id(name));
+        return Registry.register(Registries.PARTICLE_TYPE, particleKey, type);
     }
 }

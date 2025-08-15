@@ -10,6 +10,7 @@ import net.minecraft.particle.SimpleParticleType;
 import projectbackroom.jonathanx.init.BackroomParticleTypes;
 import projectbackroom.jonathanx.particle.util.ParticleColorManagement;
 
+// TODO: Decrease the use of Access Wideners
 @Environment(EnvType.CLIENT)
 public class BackroomPipeLeakParticle extends BlockLeakParticle {
     public static float[] chosenCWColors;

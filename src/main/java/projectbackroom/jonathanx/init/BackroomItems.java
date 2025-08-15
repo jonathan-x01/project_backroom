@@ -27,6 +27,9 @@ public class BackroomItems implements Initer {
     public static Item RUSTY_SHARD = register("rusty_shard", Item::new, new Item.Settings());
     public static Item RUSTY_TIPPED_ARROW = register("rusty_tipped_arrow", RustyTippedArrowItem::new, new Item.Settings());
     public static Item MISSING_POSTER = register("missing_poster", MissingPosterItem::new, new Item.Settings());
+    public static Item ALMOND_WATER_BUCKET;
+    public static Item CONTAMINATED_WATER_BUCKET;
+    public static Item BLACK_SLUDGE_BUCKET;
 
     // Spawn Eggs
     public static Item SMILER_SPAWN_EGG = registerSpawnEgg("smiler", BackroomEntities.SMILER, 0, 16777215);
@@ -59,6 +62,12 @@ public class BackroomItems implements Initer {
         return Registry.register(Registries.ITEM,ProjectBackroom.id(name), item);
     }
 
+    private void initFluidBuckets(){
+        ALMOND_WATER_BUCKET = register("almond_water_bucket", (settings) -> new BucketItem(BackroomFluids.ALMOND_WATER, settings), (new Item.Settings()).recipeRemainder(Items.BUCKET).maxCount(1));
+        CONTAMINATED_WATER_BUCKET = register("contaminated_water_bucket", (settings) -> new BucketItem(BackroomFluids.CONTAMINATED_WATER, settings), (new Item.Settings()).recipeRemainder(Items.BUCKET).maxCount(1));
+        BLACK_SLUDGE_BUCKET = register("black_sludge_bucket", (settings) -> new BucketItem(BackroomFluids.BLACK_SLUDGE, settings), (new Item.Settings()).recipeRemainder(Items.BUCKET).maxCount(1));
+    }
+
     @Override
     public int order() {
         return 1;
@@ -67,6 +76,7 @@ public class BackroomItems implements Initer {
     @Override
     public void init() {
         Initer.super.init();
+        this.initFluidBuckets();
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
             content.addAfter(Items.ARROW, RUSTY_TIPPED_ARROW);
         });
@@ -76,12 +86,15 @@ public class BackroomItems implements Initer {
                     entries.add(ORIGINAL_ALMOND_WATER);
                     entries.add(LIQUID_PAIN);
                     entries.add(CONTAMINATED_WATER);
-                    entries.add(ALMOND_MILK_BUCKET);
                     entries.add(ALMOND);
                     entries.add(ALMOND_HUSK);
                     entries.add(ALMOND_SEED);
                     entries.add(RUSTY_SHARD);
                     entries.add(MISSING_POSTER);
+                    entries.add(ALMOND_MILK_BUCKET);
+                    entries.add(ALMOND_WATER_BUCKET);
+                    entries.add(CONTAMINATED_WATER_BUCKET);
+                    entries.add(BLACK_SLUDGE_BUCKET);
                 }));
 
         BackroomItemGroups.getItemGroup("backroom_spawn_eggs")
